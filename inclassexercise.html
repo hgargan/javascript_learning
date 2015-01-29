@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>In-class exercise</title>
+<style>
+    h1 {
+        color: #53A0D3;
+    }
+    
+    body {
+        color: #666;
+    }
+</style>
+</head>
+
+<body>
+<h1 id="greeting">Hello, Your Name</h1>
+<hr><br><br>
+<script>
+    var myDateVar = new Date();
+    document.write(myDateVar + "<br/>");
+</script>
+<div id="paragraph"</div>This is the second paragraph and it will be changed on a button-click to all uppercase.</div><br>
+</body>
+<script>
+    var userName = "Hello, Henry";
+    function myFunction(){
+      document.getElementById("greeting").innerHTML= userName;
+    }
+    
+    myFunction();
+    
+
+    function secondFunction() {
+        document.getElementById("paragraph").innerHTML="THIS IS THE SECOND PARAGRAPH AND IT HAS BEEN CHANGED ON A BUTTON-CLICK TO ALL UPPERCASE.";
+        alert("YOU HAVE CLICKED THE BUTTON");
+    }
+</script>
+ <button onclick="secondFunction()">Click me</button>
+</html>
